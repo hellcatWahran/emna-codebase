@@ -1,0 +1,133 @@
+a,
+p {
+  word-break: break-all;
+}
+
+/* Header Styling */
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+  background-color: grey;
+}
+.header a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+.header a:hover {
+  text-decoration: none;
+  color: rgb(107, 195, 221);
+}
+
+/* User List Styling */
+.list {
+  background: rgb(189, 189, 189);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3em;
+  padding: 2em 1em;
+  min-height: 100vh;
+}
+/* User Card Styling */
+.user-card {
+  background-color: rgb(241, 241, 241);
+  padding: 1em;
+  width: 270px;
+  height: fit-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+@media (hover: hover) {
+  .user-card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgb(80, 79, 79);
+  }
+  .btn:hover {
+    background: rgb(224, 102, 224);
+  }
+}
+.user-card h2 {
+  font-size: 1.6rem;
+}
+
+/* User Details  */
+
+.detail-box {
+  background: rgb(189, 189, 189);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+  min-height: 100vh;
+}
+
+.user-detail {
+  background-color: rgb(241, 241, 241);
+  padding: 1em;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  box-shadow: 10px 10px 30px rgb(80, 79, 79);
+}
+
+/* ******* Media screen ******** */
+
+@media screen and (max-width: 385px) {
+  .user-detail {
+    width: 98%;
+  }
+  .list {
+    flex-direction: column;
+    padding: 2em 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .user-card {
+    width: 90%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.user-detail p {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-break: break-all;
+}
+
+/* Footer Styling */
+.footer {
+  gap: 0.5em;
+  padding: 0.4em;
+}
+.footer p {
+  color: white;
+  font-weight: 600;
+}
+.footer a {
+  color: indigo;
+}
+
+/* /* Just some useful classes .btn { */
+.btn {
+  border: none;
+  background: grey;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 90px;
+  color: white;
+  margin-top: 1.5em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
